@@ -13,7 +13,7 @@ namespace LabThree
             {
                 Console.WriteLine("Enter a whole number between 1 and 100");
                 var numberInput = Console.ReadLine();
-
+                
                 var validNumber = int.TryParse(numberInput, out var number);
 
                 if (!validNumber || (number > 100 || number < 1))
@@ -36,7 +36,10 @@ namespace LabThree
                 Console.WriteLine("Would you like to continue? (y/n)");
                 proceed = Console.ReadLine().ToUpper();
             } while (proceed == "Y");
+
+            Console.WriteLine("Goodbye!");
         }
+
 
         public static bool IsEven(int value)
         {
