@@ -64,6 +64,8 @@ namespace LabThree
 
         public static string DetermineOddOutput(int value, string name)
         {
+            //redundant, but following the logic as specified in the assignment
+            //normally, would have similar pattern to DetermineEvenOutput()
             if (value > 60)
             {
                 return $"\nHello {name}\n{value} Odd";
