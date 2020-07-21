@@ -35,7 +35,7 @@ namespace LabThree
 
                 Console.WriteLine("Would you like to continue? (y/n)");
                 proceed = Console.ReadLine().ToUpper();
-            } while (proceed == "Y");
+            } while (string.Equals(proceed, "Y"));
 
             Console.WriteLine("Goodbye!");
         }
